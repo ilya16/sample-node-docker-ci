@@ -1,7 +1,7 @@
 #!/bin/bash
 docker push ib16/sample-node
 
-ssh deploy@146.148.121.114 << EOF
+ssh ilyaborovik97@146.148.121.114 << EOF
 docker pull ib16/sample-node:latest
 docker stop web || true
 docker rm web || true
